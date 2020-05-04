@@ -1,0 +1,6082 @@
+"BasketballManagerGUI"
+(list
+ (cons 'name "BasketballManagerGUI")
+ (cons 'parent-class #f)
+ (cons 'med-version (list 3 17))
+ (cons
+  'code
+  (lambda (parent-34917)
+    (let* ((code-34919 parent-34917)
+           (code-34921 (new prop:atom% (value 'BasketballManagerGUI)))
+           (code-34920
+            (new
+             prop:field-id%
+             (value code-34921)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34923
+            (new prop:code% (value project%) (value-code 'project%)))
+           (code-34922
+            (new
+             prop:field-id%
+             (value code-34923)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34925
+            (new
+             prop:atom%
+             (value
+              '"C:\\Users\\EDWIN\\Desktop\\BasketballManager\\BasketballManagerGUI.med")))
+           (code-34924
+            (new
+             prop:field-id%
+             (value code-34925)
+             (field-id 'file)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#t)))
+           (code-34927 (new prop:atom% (value '#f)))
+           (code-34926
+            (new
+             prop:field-id%
+             (value code-34927)
+             (field-id 'code-file)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#t)))
+           (code-34929 (new prop:atom% (value '#f)))
+           (code-34928
+            (new
+             prop:field-id%
+             (value code-34929)
+             (field-id 'changed)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#t)))
+           (code-34931
+            (new
+             prop:atom%
+             (value (list '"racket/gui/base" '"racket/class" '"racket/list"))))
+           (code-34930
+            (new
+             prop:field-id%
+             (value code-34931)
+             (field-id 'code-requires)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34933 (new prop:atom% (value '#f)))
+           (code-34932
+            (new
+             prop:field-id%
+             (value code-34933)
+             (field-id 'runtime-paths?)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34918
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'project))
+             (mred-parent code-34919)
+             (properties
+              (list
+               (cons 'id code-34920)
+               (cons 'code-gen-class code-34922)
+               (cons 'file code-34924)
+               (cons 'code-file code-34926)
+               (cons 'changed code-34928)
+               (cons 'code-requires code-34930)
+               (cons 'runtime-paths? code-34932)))))
+           (code-34936 (new prop:atom% (value 'MainFrame)))
+           (code-34935
+            (new
+             prop:field-id%
+             (value code-34936)
+             (field-id 'id)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34938 (new prop:code% (value frame%) (value-code 'frame%)))
+           (code-34937
+            (new
+             prop:field-id%
+             (value code-34938)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34940 (new prop:atom% (value '"Баскетбол  Менеджер")))
+           (code-34939
+            (new
+             prop:field-id%
+             (value code-34940)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34944 (new prop:atom% (value '#t)))
+           (code-34945 (new prop:atom% (value '800)))
+           (code-34943 (new prop:hgroup% (value (list code-34944 code-34945))))
+           (code-34946
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-34942
+            (new
+             prop:proc%
+             (value code-34943)
+             (prop-code code-34946)
+             (generate-quoted-code '#f)))
+           (code-34941
+            (new
+             prop:field-id%
+             (value code-34942)
+             (field-id 'width)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34950 (new prop:atom% (value '#t)))
+           (code-34951 (new prop:atom% (value '600)))
+           (code-34949 (new prop:hgroup% (value (list code-34950 code-34951))))
+           (code-34952
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-34948
+            (new
+             prop:proc%
+             (value code-34949)
+             (prop-code code-34952)
+             (generate-quoted-code '#f)))
+           (code-34947
+            (new
+             prop:field-id%
+             (value code-34948)
+             (field-id 'height)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34956 (new prop:atom% (value '#f)))
+           (code-34957 (new prop:atom% (value '0)))
+           (code-34955 (new prop:hgroup% (value (list code-34956 code-34957))))
+           (code-34958
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-34954
+            (new
+             prop:proc%
+             (value code-34955)
+             (prop-code code-34958)
+             (generate-quoted-code '#f)))
+           (code-34953
+            (new
+             prop:field-id%
+             (value code-34954)
+             (field-id 'x)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34962 (new prop:atom% (value '#f)))
+           (code-34963 (new prop:atom% (value '0)))
+           (code-34961 (new prop:hgroup% (value (list code-34962 code-34963))))
+           (code-34964
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-34960
+            (new
+             prop:proc%
+             (value code-34961)
+             (prop-code code-34964)
+             (generate-quoted-code '#f)))
+           (code-34959
+            (new
+             prop:field-id%
+             (value code-34960)
+             (field-id 'y)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34967
+            (new
+             prop:some-of%
+             (value (list))
+             (choices
+              (list
+               'no-resize-border
+               'no-caption
+               'no-system-menu
+               'hide-menu-bar
+               'toolbar-button
+               'float
+               'metal
+               'fullscreen-button
+               'fullscreen-aux))))
+           (code-34966 (new prop:popup% (value code-34967)))
+           (code-34965
+            (new
+             prop:field-id%
+             (value code-34966)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34969 (new prop:atom% (value '#t)))
+           (code-34968
+            (new
+             prop:field-id%
+             (value code-34969)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34971 (new prop:atom% (value '0)))
+           (code-34970
+            (new
+             prop:field-id%
+             (value code-34971)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34973 (new prop:atom% (value '0)))
+           (code-34972
+            (new
+             prop:field-id%
+             (value code-34973)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34976
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-34977
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-34975 (new prop:group% (value (list code-34976 code-34977))))
+           (code-34974
+            (new
+             prop:field-id%
+             (value code-34975)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34979 (new prop:atom% (value '70)))
+           (code-34978
+            (new
+             prop:field-id%
+             (value code-34979)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34981 (new prop:atom% (value '30)))
+           (code-34980
+            (new
+             prop:field-id%
+             (value code-34981)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34983 (new prop:atom% (value '#t)))
+           (code-34982
+            (new
+             prop:field-id%
+             (value code-34983)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34985 (new prop:atom% (value '#t)))
+           (code-34984
+            (new
+             prop:field-id%
+             (value code-34985)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34987 (new prop:atom% (value '#t)))
+           (code-34986
+            (new
+             prop:field-id%
+             (value code-34987)
+             (field-id 'show-at-init)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34934
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'frame))
+             (mred-parent code-34918)
+             (properties
+              (list
+               (cons 'id code-34935)
+               (cons 'code-gen-class code-34937)
+               (cons 'label code-34939)
+               (cons 'width code-34941)
+               (cons 'height code-34947)
+               (cons 'x code-34953)
+               (cons 'y code-34959)
+               (cons 'style code-34965)
+               (cons 'enabled code-34968)
+               (cons 'border code-34970)
+               (cons 'spacing code-34972)
+               (cons 'alignment code-34974)
+               (cons 'min-width code-34978)
+               (cons 'min-height code-34980)
+               (cons 'stretchable-width code-34982)
+               (cons 'stretchable-height code-34984)
+               (cons 'show-at-init code-34986)))))
+           (code-34990 (new prop:atom% (value 'TabPanel)))
+           (code-34989
+            (new
+             prop:field-id%
+             (value code-34990)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-34992
+            (new
+             prop:code%
+             (value
+              (class tab-panel%
+                (super-new)
+                (define child-panels '())
+                (define/public
+                 (add-child-panel p label)
+                 (set! child-panels (append child-panels (list p)))
+                 (send this append label)
+                 (when (> (length child-panels) 1) (send this delete-child p)))
+                (define/public
+                 (active-child n)
+                 (send this change-children
+                   (lambda (children) (list (list-ref child-panels n)))))))
+             (value-code
+              '(class tab-panel%
+                 (super-new)
+                 (define child-panels '())
+                 (define/public
+                  (add-child-panel p label)
+                  (set! child-panels (append child-panels (list p)))
+                  (send this append label)
+                  (when (> (length child-panels) 1)
+                    (send this delete-child p)))
+                 (define/public
+                  (active-child n)
+                  (send this change-children
+                    (lambda (children) (list (list-ref child-panels n)))))))))
+           (code-34991
+            (new
+             prop:field-id%
+             (value code-34992)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34994 (new prop:atom% (value (list))))
+           (code-34993
+            (new
+             prop:field-id%
+             (value code-34994)
+             (field-id 'choices)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34996
+            (new
+             prop:code%
+             (value (λ (tp e) (send tp active-child (send tp get-selection))))
+             (value-code
+              '(λ (tp e) (send tp active-child (send tp get-selection))))))
+           (code-34995
+            (new
+             prop:field-id%
+             (value code-34996)
+             (field-id 'callback)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34998
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'no-border 'deleted))))
+           (code-34997
+            (new
+             prop:field-id%
+             (value code-34998)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35000 (new prop:atom% (value '#t)))
+           (code-34999
+            (new
+             prop:field-id%
+             (value code-35000)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35002 (new prop:atom% (value '0)))
+           (code-35001
+            (new
+             prop:field-id%
+             (value code-35002)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35004 (new prop:atom% (value '0)))
+           (code-35003
+            (new
+             prop:field-id%
+             (value code-35004)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35006 (new prop:atom% (value '0)))
+           (code-35005
+            (new
+             prop:field-id%
+             (value code-35006)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35008 (new prop:atom% (value '0)))
+           (code-35007
+            (new
+             prop:field-id%
+             (value code-35008)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35011
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35012
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35010 (new prop:group% (value (list code-35011 code-35012))))
+           (code-35009
+            (new
+             prop:field-id%
+             (value code-35010)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35014 (new prop:atom% (value '0)))
+           (code-35013
+            (new
+             prop:field-id%
+             (value code-35014)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35016 (new prop:atom% (value '0)))
+           (code-35015
+            (new
+             prop:field-id%
+             (value code-35016)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35018 (new prop:atom% (value '#t)))
+           (code-35017
+            (new
+             prop:field-id%
+             (value code-35018)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35020 (new prop:atom% (value '#t)))
+           (code-35019
+            (new
+             prop:field-id%
+             (value code-35020)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-34988
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'tab-panel))
+             (mred-parent code-34934)
+             (properties
+              (list
+               (cons 'id code-34989)
+               (cons 'code-gen-class code-34991)
+               (cons 'choices code-34993)
+               (cons 'callback code-34995)
+               (cons 'style code-34997)
+               (cons 'enabled code-34999)
+               (cons 'vert-margin code-35001)
+               (cons 'horiz-margin code-35003)
+               (cons 'border code-35005)
+               (cons 'spacing code-35007)
+               (cons 'alignment code-35009)
+               (cons 'min-width code-35013)
+               (cons 'min-height code-35015)
+               (cons 'stretchable-width code-35017)
+               (cons 'stretchable-height code-35019)))))
+           (code-35023 (new prop:atom% (value 'TeamTab)))
+           (code-35022
+            (new
+             prop:field-id%
+             (value code-35023)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35025
+            (new
+             prop:code%
+             (value
+              (class vertical-panel%
+                (init parent)
+                (init-field label)
+                (super-new (parent parent))
+                (send parent add-child-panel this label)))
+             (value-code
+              '(class vertical-panel%
+                 (init parent)
+                 (init-field label)
+                 (super-new (parent parent))
+                 (send parent add-child-panel this label)))))
+           (code-35024
+            (new
+             prop:field-id%
+             (value code-35025)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35027 (new prop:atom% (value '"Команды")))
+           (code-35026
+            (new
+             prop:field-id%
+             (value code-35027)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35029
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35028
+            (new
+             prop:field-id%
+             (value code-35029)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35031 (new prop:atom% (value '#t)))
+           (code-35030
+            (new
+             prop:field-id%
+             (value code-35031)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35033 (new prop:atom% (value '0)))
+           (code-35032
+            (new
+             prop:field-id%
+             (value code-35033)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35035 (new prop:atom% (value '0)))
+           (code-35034
+            (new
+             prop:field-id%
+             (value code-35035)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35037 (new prop:atom% (value '0)))
+           (code-35036
+            (new
+             prop:field-id%
+             (value code-35037)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35039 (new prop:atom% (value '0)))
+           (code-35038
+            (new
+             prop:field-id%
+             (value code-35039)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35042
+            (new
+             prop:one-of%
+             (value 'left)
+             (choices (list 'left 'center 'right))))
+           (code-35043
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35041 (new prop:group% (value (list code-35042 code-35043))))
+           (code-35040
+            (new
+             prop:field-id%
+             (value code-35041)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35045 (new prop:atom% (value '50)))
+           (code-35044
+            (new
+             prop:field-id%
+             (value code-35045)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35047 (new prop:atom% (value '50)))
+           (code-35046
+            (new
+             prop:field-id%
+             (value code-35047)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35049 (new prop:atom% (value '#t)))
+           (code-35048
+            (new
+             prop:field-id%
+             (value code-35049)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35051 (new prop:atom% (value '#t)))
+           (code-35050
+            (new
+             prop:field-id%
+             (value code-35051)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35021
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'tab))
+             (mred-parent code-34988)
+             (properties
+              (list
+               (cons 'id code-35022)
+               (cons 'code-gen-class code-35024)
+               (cons 'label code-35026)
+               (cons 'style code-35028)
+               (cons 'enabled code-35030)
+               (cons 'vert-margin code-35032)
+               (cons 'horiz-margin code-35034)
+               (cons 'border code-35036)
+               (cons 'spacing code-35038)
+               (cons 'alignment code-35040)
+               (cons 'min-width code-35044)
+               (cons 'min-height code-35046)
+               (cons 'stretchable-width code-35048)
+               (cons 'stretchable-height code-35050)))))
+           (code-35054 (new prop:atom% (value 'TeamOptionsBox)))
+           (code-35053
+            (new
+             prop:field-id%
+             (value code-35054)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35056
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35055
+            (new
+             prop:field-id%
+             (value code-35056)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35058 (new prop:atom% (value '"Возможности")))
+           (code-35057
+            (new
+             prop:field-id%
+             (value code-35058)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35060
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35059
+            (new
+             prop:field-id%
+             (value code-35060)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35063
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35064
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35062
+            (new
+             prop:font%
+             (value code-35063)
+             (prop-code code-35064)
+             (generate-quoted-code '#t)))
+           (code-35061
+            (new
+             prop:field-id%
+             (value code-35062)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35066 (new prop:atom% (value '#t)))
+           (code-35065
+            (new
+             prop:field-id%
+             (value code-35066)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35068 (new prop:atom% (value '2)))
+           (code-35067
+            (new
+             prop:field-id%
+             (value code-35068)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35070 (new prop:atom% (value '2)))
+           (code-35069
+            (new
+             prop:field-id%
+             (value code-35070)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35072 (new prop:atom% (value '0)))
+           (code-35071
+            (new
+             prop:field-id%
+             (value code-35072)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35074 (new prop:atom% (value '0)))
+           (code-35073
+            (new
+             prop:field-id%
+             (value code-35074)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35077
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35078
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35076 (new prop:group% (value (list code-35077 code-35078))))
+           (code-35075
+            (new
+             prop:field-id%
+             (value code-35076)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35080 (new prop:atom% (value '0)))
+           (code-35079
+            (new
+             prop:field-id%
+             (value code-35080)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35082 (new prop:atom% (value '50)))
+           (code-35081
+            (new
+             prop:field-id%
+             (value code-35082)
+             (field-id 'min-height)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35084 (new prop:atom% (value '#t)))
+           (code-35083
+            (new
+             prop:field-id%
+             (value code-35084)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35086 (new prop:atom% (value '#f)))
+           (code-35085
+            (new
+             prop:field-id%
+             (value code-35086)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35052
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35021)
+             (properties
+              (list
+               (cons 'id code-35053)
+               (cons 'code-gen-class code-35055)
+               (cons 'label code-35057)
+               (cons 'style code-35059)
+               (cons 'font code-35061)
+               (cons 'enabled code-35065)
+               (cons 'vert-margin code-35067)
+               (cons 'horiz-margin code-35069)
+               (cons 'border code-35071)
+               (cons 'spacing code-35073)
+               (cons 'alignment code-35075)
+               (cons 'min-width code-35079)
+               (cons 'min-height code-35081)
+               (cons 'stretchable-width code-35083)
+               (cons 'stretchable-height code-35085)))))
+           (code-35089 (new prop:atom% (value 'TeamOptionsPanel)))
+           (code-35088
+            (new
+             prop:field-id%
+             (value code-35089)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35091
+            (new
+             prop:code%
+             (value horizontal-pane%)
+             (value-code 'horizontal-pane%)))
+           (code-35090
+            (new
+             prop:field-id%
+             (value code-35091)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35093 (new prop:atom% (value '0)))
+           (code-35092
+            (new
+             prop:field-id%
+             (value code-35093)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35095 (new prop:atom% (value '0)))
+           (code-35094
+            (new
+             prop:field-id%
+             (value code-35095)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35097 (new prop:atom% (value '0)))
+           (code-35096
+            (new
+             prop:field-id%
+             (value code-35097)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35099 (new prop:atom% (value '100)))
+           (code-35098
+            (new
+             prop:field-id%
+             (value code-35099)
+             (field-id 'spacing)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35102
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35103
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35101 (new prop:group% (value (list code-35102 code-35103))))
+           (code-35100
+            (new
+             prop:field-id%
+             (value code-35101)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35105 (new prop:atom% (value '0)))
+           (code-35104
+            (new
+             prop:field-id%
+             (value code-35105)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35107 (new prop:atom% (value '0)))
+           (code-35106
+            (new
+             prop:field-id%
+             (value code-35107)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35109 (new prop:atom% (value '#t)))
+           (code-35108
+            (new
+             prop:field-id%
+             (value code-35109)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35111 (new prop:atom% (value '#t)))
+           (code-35110
+            (new
+             prop:field-id%
+             (value code-35111)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35087
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'horizontal-pane))
+             (mred-parent code-35052)
+             (properties
+              (list
+               (cons 'id code-35088)
+               (cons 'code-gen-class code-35090)
+               (cons 'vert-margin code-35092)
+               (cons 'horiz-margin code-35094)
+               (cons 'border code-35096)
+               (cons 'spacing code-35098)
+               (cons 'alignment code-35100)
+               (cons 'min-width code-35104)
+               (cons 'min-height code-35106)
+               (cons 'stretchable-width code-35108)
+               (cons 'stretchable-height code-35110)))))
+           (code-35114 (new prop:atom% (value 'AddTeamButton)))
+           (code-35113
+            (new
+             prop:field-id%
+             (value code-35114)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35116 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35115
+            (new
+             prop:field-id%
+             (value code-35116)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35120 (new prop:atom% (value '"Добавить команду")))
+           (code-35121 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35122 (new prop:file% (value '#f)))
+           (code-35119
+            (new prop:group% (value (list code-35120 code-35121 code-35122))))
+           (code-35123
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35118
+            (new
+             prop:proc%
+             (value code-35119)
+             (prop-code code-35123)
+             (generate-quoted-code '#t)))
+           (code-35117
+            (new
+             prop:field-id%
+             (value code-35118)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35125
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35124
+            (new
+             prop:field-id%
+             (value code-35125)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35127
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35126
+            (new
+             prop:field-id%
+             (value code-35127)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35130
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35131
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35129
+            (new
+             prop:font%
+             (value code-35130)
+             (prop-code code-35131)
+             (generate-quoted-code '#t)))
+           (code-35128
+            (new
+             prop:field-id%
+             (value code-35129)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35133 (new prop:atom% (value '#t)))
+           (code-35132
+            (new
+             prop:field-id%
+             (value code-35133)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35135 (new prop:atom% (value '2)))
+           (code-35134
+            (new
+             prop:field-id%
+             (value code-35135)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35137 (new prop:atom% (value '2)))
+           (code-35136
+            (new
+             prop:field-id%
+             (value code-35137)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35139 (new prop:atom% (value '0)))
+           (code-35138
+            (new
+             prop:field-id%
+             (value code-35139)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35141 (new prop:atom% (value '0)))
+           (code-35140
+            (new
+             prop:field-id%
+             (value code-35141)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35143 (new prop:atom% (value '#f)))
+           (code-35142
+            (new
+             prop:field-id%
+             (value code-35143)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35145 (new prop:atom% (value '#f)))
+           (code-35144
+            (new
+             prop:field-id%
+             (value code-35145)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35112
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35087)
+             (properties
+              (list
+               (cons 'id code-35113)
+               (cons 'code-gen-class code-35115)
+               (cons 'label code-35117)
+               (cons 'callback code-35124)
+               (cons 'style code-35126)
+               (cons 'font code-35128)
+               (cons 'enabled code-35132)
+               (cons 'vert-margin code-35134)
+               (cons 'horiz-margin code-35136)
+               (cons 'min-width code-35138)
+               (cons 'min-height code-35140)
+               (cons 'stretchable-width code-35142)
+               (cons 'stretchable-height code-35144)))))
+           (code-35148 (new prop:atom% (value 'EditTeamButton)))
+           (code-35147
+            (new
+             prop:field-id%
+             (value code-35148)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35150 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35149
+            (new
+             prop:field-id%
+             (value code-35150)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35154 (new prop:atom% (value '"Изменить команду")))
+           (code-35155 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35156 (new prop:file% (value '#f)))
+           (code-35153
+            (new prop:group% (value (list code-35154 code-35155 code-35156))))
+           (code-35157
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35152
+            (new
+             prop:proc%
+             (value code-35153)
+             (prop-code code-35157)
+             (generate-quoted-code '#t)))
+           (code-35151
+            (new
+             prop:field-id%
+             (value code-35152)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35159
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35158
+            (new
+             prop:field-id%
+             (value code-35159)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35161
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35160
+            (new
+             prop:field-id%
+             (value code-35161)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35164
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35165
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35163
+            (new
+             prop:font%
+             (value code-35164)
+             (prop-code code-35165)
+             (generate-quoted-code '#t)))
+           (code-35162
+            (new
+             prop:field-id%
+             (value code-35163)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35167 (new prop:atom% (value '#t)))
+           (code-35166
+            (new
+             prop:field-id%
+             (value code-35167)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35169 (new prop:atom% (value '2)))
+           (code-35168
+            (new
+             prop:field-id%
+             (value code-35169)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35171 (new prop:atom% (value '2)))
+           (code-35170
+            (new
+             prop:field-id%
+             (value code-35171)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35173 (new prop:atom% (value '0)))
+           (code-35172
+            (new
+             prop:field-id%
+             (value code-35173)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35175 (new prop:atom% (value '0)))
+           (code-35174
+            (new
+             prop:field-id%
+             (value code-35175)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35177 (new prop:atom% (value '#f)))
+           (code-35176
+            (new
+             prop:field-id%
+             (value code-35177)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35179 (new prop:atom% (value '#f)))
+           (code-35178
+            (new
+             prop:field-id%
+             (value code-35179)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35146
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35087)
+             (properties
+              (list
+               (cons 'id code-35147)
+               (cons 'code-gen-class code-35149)
+               (cons 'label code-35151)
+               (cons 'callback code-35158)
+               (cons 'style code-35160)
+               (cons 'font code-35162)
+               (cons 'enabled code-35166)
+               (cons 'vert-margin code-35168)
+               (cons 'horiz-margin code-35170)
+               (cons 'min-width code-35172)
+               (cons 'min-height code-35174)
+               (cons 'stretchable-width code-35176)
+               (cons 'stretchable-height code-35178)))))
+           (code-35182 (new prop:atom% (value 'DeleteTeamButton)))
+           (code-35181
+            (new
+             prop:field-id%
+             (value code-35182)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35184 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35183
+            (new
+             prop:field-id%
+             (value code-35184)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35188 (new prop:atom% (value '"Удалить команду")))
+           (code-35189 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35190 (new prop:file% (value '#f)))
+           (code-35187
+            (new prop:group% (value (list code-35188 code-35189 code-35190))))
+           (code-35191
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35186
+            (new
+             prop:proc%
+             (value code-35187)
+             (prop-code code-35191)
+             (generate-quoted-code '#t)))
+           (code-35185
+            (new
+             prop:field-id%
+             (value code-35186)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35193
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35192
+            (new
+             prop:field-id%
+             (value code-35193)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35195
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35194
+            (new
+             prop:field-id%
+             (value code-35195)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35198
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35199
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35197
+            (new
+             prop:font%
+             (value code-35198)
+             (prop-code code-35199)
+             (generate-quoted-code '#t)))
+           (code-35196
+            (new
+             prop:field-id%
+             (value code-35197)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35201 (new prop:atom% (value '#t)))
+           (code-35200
+            (new
+             prop:field-id%
+             (value code-35201)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35203 (new prop:atom% (value '2)))
+           (code-35202
+            (new
+             prop:field-id%
+             (value code-35203)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35205 (new prop:atom% (value '2)))
+           (code-35204
+            (new
+             prop:field-id%
+             (value code-35205)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35207 (new prop:atom% (value '0)))
+           (code-35206
+            (new
+             prop:field-id%
+             (value code-35207)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35209 (new prop:atom% (value '0)))
+           (code-35208
+            (new
+             prop:field-id%
+             (value code-35209)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35211 (new prop:atom% (value '#f)))
+           (code-35210
+            (new
+             prop:field-id%
+             (value code-35211)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35213 (new prop:atom% (value '#f)))
+           (code-35212
+            (new
+             prop:field-id%
+             (value code-35213)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35180
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35087)
+             (properties
+              (list
+               (cons 'id code-35181)
+               (cons 'code-gen-class code-35183)
+               (cons 'label code-35185)
+               (cons 'callback code-35192)
+               (cons 'style code-35194)
+               (cons 'font code-35196)
+               (cons 'enabled code-35200)
+               (cons 'vert-margin code-35202)
+               (cons 'horiz-margin code-35204)
+               (cons 'min-width code-35206)
+               (cons 'min-height code-35208)
+               (cons 'stretchable-width code-35210)
+               (cons 'stretchable-height code-35212)))))
+           (code-35216 (new prop:atom% (value 'TeamBox)))
+           (code-35215
+            (new
+             prop:field-id%
+             (value code-35216)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35218
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35217
+            (new
+             prop:field-id%
+             (value code-35218)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35220 (new prop:atom% (value '"Команды")))
+           (code-35219
+            (new
+             prop:field-id%
+             (value code-35220)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35222
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35221
+            (new
+             prop:field-id%
+             (value code-35222)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35225
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35226
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35224
+            (new
+             prop:font%
+             (value code-35225)
+             (prop-code code-35226)
+             (generate-quoted-code '#t)))
+           (code-35223
+            (new
+             prop:field-id%
+             (value code-35224)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35228 (new prop:atom% (value '#t)))
+           (code-35227
+            (new
+             prop:field-id%
+             (value code-35228)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35230 (new prop:atom% (value '2)))
+           (code-35229
+            (new
+             prop:field-id%
+             (value code-35230)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35232 (new prop:atom% (value '2)))
+           (code-35231
+            (new
+             prop:field-id%
+             (value code-35232)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35234 (new prop:atom% (value '0)))
+           (code-35233
+            (new
+             prop:field-id%
+             (value code-35234)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35236 (new prop:atom% (value '0)))
+           (code-35235
+            (new
+             prop:field-id%
+             (value code-35236)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35239
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35240
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35238 (new prop:group% (value (list code-35239 code-35240))))
+           (code-35237
+            (new
+             prop:field-id%
+             (value code-35238)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35242 (new prop:atom% (value '0)))
+           (code-35241
+            (new
+             prop:field-id%
+             (value code-35242)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35244 (new prop:atom% (value '0)))
+           (code-35243
+            (new
+             prop:field-id%
+             (value code-35244)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35246 (new prop:atom% (value '#t)))
+           (code-35245
+            (new
+             prop:field-id%
+             (value code-35246)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35248 (new prop:atom% (value '#t)))
+           (code-35247
+            (new
+             prop:field-id%
+             (value code-35248)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35214
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35021)
+             (properties
+              (list
+               (cons 'id code-35215)
+               (cons 'code-gen-class code-35217)
+               (cons 'label code-35219)
+               (cons 'style code-35221)
+               (cons 'font code-35223)
+               (cons 'enabled code-35227)
+               (cons 'vert-margin code-35229)
+               (cons 'horiz-margin code-35231)
+               (cons 'border code-35233)
+               (cons 'spacing code-35235)
+               (cons 'alignment code-35237)
+               (cons 'min-width code-35241)
+               (cons 'min-height code-35243)
+               (cons 'stretchable-width code-35245)
+               (cons 'stretchable-height code-35247)))))
+           (code-35251 (new prop:atom% (value 'TournamentTab)))
+           (code-35250
+            (new
+             prop:field-id%
+             (value code-35251)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35253
+            (new
+             prop:code%
+             (value
+              (class vertical-panel%
+                (init parent)
+                (init-field label)
+                (super-new (parent parent))
+                (send parent add-child-panel this label)))
+             (value-code
+              '(class vertical-panel%
+                 (init parent)
+                 (init-field label)
+                 (super-new (parent parent))
+                 (send parent add-child-panel this label)))))
+           (code-35252
+            (new
+             prop:field-id%
+             (value code-35253)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35255 (new prop:atom% (value '"Соревнования")))
+           (code-35254
+            (new
+             prop:field-id%
+             (value code-35255)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35257
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35256
+            (new
+             prop:field-id%
+             (value code-35257)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35259 (new prop:atom% (value '#t)))
+           (code-35258
+            (new
+             prop:field-id%
+             (value code-35259)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35261 (new prop:atom% (value '0)))
+           (code-35260
+            (new
+             prop:field-id%
+             (value code-35261)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35263 (new prop:atom% (value '0)))
+           (code-35262
+            (new
+             prop:field-id%
+             (value code-35263)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35265 (new prop:atom% (value '0)))
+           (code-35264
+            (new
+             prop:field-id%
+             (value code-35265)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35267 (new prop:atom% (value '0)))
+           (code-35266
+            (new
+             prop:field-id%
+             (value code-35267)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35270
+            (new
+             prop:one-of%
+             (value 'left)
+             (choices (list 'left 'center 'right))))
+           (code-35271
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35269 (new prop:group% (value (list code-35270 code-35271))))
+           (code-35268
+            (new
+             prop:field-id%
+             (value code-35269)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35273 (new prop:atom% (value '0)))
+           (code-35272
+            (new
+             prop:field-id%
+             (value code-35273)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35275 (new prop:atom% (value '0)))
+           (code-35274
+            (new
+             prop:field-id%
+             (value code-35275)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35277 (new prop:atom% (value '#t)))
+           (code-35276
+            (new
+             prop:field-id%
+             (value code-35277)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35279 (new prop:atom% (value '#t)))
+           (code-35278
+            (new
+             prop:field-id%
+             (value code-35279)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35249
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'tab))
+             (mred-parent code-34988)
+             (properties
+              (list
+               (cons 'id code-35250)
+               (cons 'code-gen-class code-35252)
+               (cons 'label code-35254)
+               (cons 'style code-35256)
+               (cons 'enabled code-35258)
+               (cons 'vert-margin code-35260)
+               (cons 'horiz-margin code-35262)
+               (cons 'border code-35264)
+               (cons 'spacing code-35266)
+               (cons 'alignment code-35268)
+               (cons 'min-width code-35272)
+               (cons 'min-height code-35274)
+               (cons 'stretchable-width code-35276)
+               (cons 'stretchable-height code-35278)))))
+           (code-35282 (new prop:atom% (value 'TournamentOptionsPanel)))
+           (code-35281
+            (new
+             prop:field-id%
+             (value code-35282)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35284
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35283
+            (new
+             prop:field-id%
+             (value code-35284)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35286 (new prop:atom% (value '"Возможности")))
+           (code-35285
+            (new
+             prop:field-id%
+             (value code-35286)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35288
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35287
+            (new
+             prop:field-id%
+             (value code-35288)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35291
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35292
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35290
+            (new
+             prop:font%
+             (value code-35291)
+             (prop-code code-35292)
+             (generate-quoted-code '#t)))
+           (code-35289
+            (new
+             prop:field-id%
+             (value code-35290)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35294 (new prop:atom% (value '#t)))
+           (code-35293
+            (new
+             prop:field-id%
+             (value code-35294)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35296 (new prop:atom% (value '2)))
+           (code-35295
+            (new
+             prop:field-id%
+             (value code-35296)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35298 (new prop:atom% (value '2)))
+           (code-35297
+            (new
+             prop:field-id%
+             (value code-35298)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35300 (new prop:atom% (value '0)))
+           (code-35299
+            (new
+             prop:field-id%
+             (value code-35300)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35302 (new prop:atom% (value '0)))
+           (code-35301
+            (new
+             prop:field-id%
+             (value code-35302)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35305
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35306
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35304 (new prop:group% (value (list code-35305 code-35306))))
+           (code-35303
+            (new
+             prop:field-id%
+             (value code-35304)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35308 (new prop:atom% (value '0)))
+           (code-35307
+            (new
+             prop:field-id%
+             (value code-35308)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35310 (new prop:atom% (value '50)))
+           (code-35309
+            (new
+             prop:field-id%
+             (value code-35310)
+             (field-id 'min-height)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35312 (new prop:atom% (value '#t)))
+           (code-35311
+            (new
+             prop:field-id%
+             (value code-35312)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35314 (new prop:atom% (value '#f)))
+           (code-35313
+            (new
+             prop:field-id%
+             (value code-35314)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35280
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35249)
+             (properties
+              (list
+               (cons 'id code-35281)
+               (cons 'code-gen-class code-35283)
+               (cons 'label code-35285)
+               (cons 'style code-35287)
+               (cons 'font code-35289)
+               (cons 'enabled code-35293)
+               (cons 'vert-margin code-35295)
+               (cons 'horiz-margin code-35297)
+               (cons 'border code-35299)
+               (cons 'spacing code-35301)
+               (cons 'alignment code-35303)
+               (cons 'min-width code-35307)
+               (cons 'min-height code-35309)
+               (cons 'stretchable-width code-35311)
+               (cons 'stretchable-height code-35313)))))
+           (code-35317 (new prop:atom% (value 'TournamentOptionsBox)))
+           (code-35316
+            (new
+             prop:field-id%
+             (value code-35317)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35319
+            (new
+             prop:code%
+             (value horizontal-pane%)
+             (value-code 'horizontal-pane%)))
+           (code-35318
+            (new
+             prop:field-id%
+             (value code-35319)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35321 (new prop:atom% (value '0)))
+           (code-35320
+            (new
+             prop:field-id%
+             (value code-35321)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35323 (new prop:atom% (value '0)))
+           (code-35322
+            (new
+             prop:field-id%
+             (value code-35323)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35325 (new prop:atom% (value '0)))
+           (code-35324
+            (new
+             prop:field-id%
+             (value code-35325)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35327 (new prop:atom% (value '100)))
+           (code-35326
+            (new
+             prop:field-id%
+             (value code-35327)
+             (field-id 'spacing)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35330
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35331
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35329 (new prop:group% (value (list code-35330 code-35331))))
+           (code-35328
+            (new
+             prop:field-id%
+             (value code-35329)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35333 (new prop:atom% (value '0)))
+           (code-35332
+            (new
+             prop:field-id%
+             (value code-35333)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35335 (new prop:atom% (value '0)))
+           (code-35334
+            (new
+             prop:field-id%
+             (value code-35335)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35337 (new prop:atom% (value '#t)))
+           (code-35336
+            (new
+             prop:field-id%
+             (value code-35337)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35339 (new prop:atom% (value '#t)))
+           (code-35338
+            (new
+             prop:field-id%
+             (value code-35339)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35315
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'horizontal-pane))
+             (mred-parent code-35280)
+             (properties
+              (list
+               (cons 'id code-35316)
+               (cons 'code-gen-class code-35318)
+               (cons 'vert-margin code-35320)
+               (cons 'horiz-margin code-35322)
+               (cons 'border code-35324)
+               (cons 'spacing code-35326)
+               (cons 'alignment code-35328)
+               (cons 'min-width code-35332)
+               (cons 'min-height code-35334)
+               (cons 'stretchable-width code-35336)
+               (cons 'stretchable-height code-35338)))))
+           (code-35342 (new prop:atom% (value 'AddTournamentButton)))
+           (code-35341
+            (new
+             prop:field-id%
+             (value code-35342)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35344 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35343
+            (new
+             prop:field-id%
+             (value code-35344)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35348 (new prop:atom% (value '"Добавить соревнование")))
+           (code-35349 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35350 (new prop:file% (value '#f)))
+           (code-35347
+            (new prop:group% (value (list code-35348 code-35349 code-35350))))
+           (code-35351
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35346
+            (new
+             prop:proc%
+             (value code-35347)
+             (prop-code code-35351)
+             (generate-quoted-code '#t)))
+           (code-35345
+            (new
+             prop:field-id%
+             (value code-35346)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35353
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35352
+            (new
+             prop:field-id%
+             (value code-35353)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35355
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35354
+            (new
+             prop:field-id%
+             (value code-35355)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35358
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35359
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35357
+            (new
+             prop:font%
+             (value code-35358)
+             (prop-code code-35359)
+             (generate-quoted-code '#t)))
+           (code-35356
+            (new
+             prop:field-id%
+             (value code-35357)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35361 (new prop:atom% (value '#t)))
+           (code-35360
+            (new
+             prop:field-id%
+             (value code-35361)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35363 (new prop:atom% (value '2)))
+           (code-35362
+            (new
+             prop:field-id%
+             (value code-35363)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35365 (new prop:atom% (value '2)))
+           (code-35364
+            (new
+             prop:field-id%
+             (value code-35365)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35367 (new prop:atom% (value '0)))
+           (code-35366
+            (new
+             prop:field-id%
+             (value code-35367)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35369 (new prop:atom% (value '0)))
+           (code-35368
+            (new
+             prop:field-id%
+             (value code-35369)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35371 (new prop:atom% (value '#f)))
+           (code-35370
+            (new
+             prop:field-id%
+             (value code-35371)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35373 (new prop:atom% (value '#f)))
+           (code-35372
+            (new
+             prop:field-id%
+             (value code-35373)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35340
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35315)
+             (properties
+              (list
+               (cons 'id code-35341)
+               (cons 'code-gen-class code-35343)
+               (cons 'label code-35345)
+               (cons 'callback code-35352)
+               (cons 'style code-35354)
+               (cons 'font code-35356)
+               (cons 'enabled code-35360)
+               (cons 'vert-margin code-35362)
+               (cons 'horiz-margin code-35364)
+               (cons 'min-width code-35366)
+               (cons 'min-height code-35368)
+               (cons 'stretchable-width code-35370)
+               (cons 'stretchable-height code-35372)))))
+           (code-35376 (new prop:atom% (value 'EditTournamentButton)))
+           (code-35375
+            (new
+             prop:field-id%
+             (value code-35376)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35378 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35377
+            (new
+             prop:field-id%
+             (value code-35378)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35382 (new prop:atom% (value '"Изменить соревнование")))
+           (code-35383 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35384 (new prop:file% (value '#f)))
+           (code-35381
+            (new prop:group% (value (list code-35382 code-35383 code-35384))))
+           (code-35385
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35380
+            (new
+             prop:proc%
+             (value code-35381)
+             (prop-code code-35385)
+             (generate-quoted-code '#t)))
+           (code-35379
+            (new
+             prop:field-id%
+             (value code-35380)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35387
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35386
+            (new
+             prop:field-id%
+             (value code-35387)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35389
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35388
+            (new
+             prop:field-id%
+             (value code-35389)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35392
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35393
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35391
+            (new
+             prop:font%
+             (value code-35392)
+             (prop-code code-35393)
+             (generate-quoted-code '#t)))
+           (code-35390
+            (new
+             prop:field-id%
+             (value code-35391)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35395 (new prop:atom% (value '#t)))
+           (code-35394
+            (new
+             prop:field-id%
+             (value code-35395)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35397 (new prop:atom% (value '2)))
+           (code-35396
+            (new
+             prop:field-id%
+             (value code-35397)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35399 (new prop:atom% (value '2)))
+           (code-35398
+            (new
+             prop:field-id%
+             (value code-35399)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35401 (new prop:atom% (value '0)))
+           (code-35400
+            (new
+             prop:field-id%
+             (value code-35401)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35403 (new prop:atom% (value '0)))
+           (code-35402
+            (new
+             prop:field-id%
+             (value code-35403)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35405 (new prop:atom% (value '#f)))
+           (code-35404
+            (new
+             prop:field-id%
+             (value code-35405)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35407 (new prop:atom% (value '#f)))
+           (code-35406
+            (new
+             prop:field-id%
+             (value code-35407)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35374
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35315)
+             (properties
+              (list
+               (cons 'id code-35375)
+               (cons 'code-gen-class code-35377)
+               (cons 'label code-35379)
+               (cons 'callback code-35386)
+               (cons 'style code-35388)
+               (cons 'font code-35390)
+               (cons 'enabled code-35394)
+               (cons 'vert-margin code-35396)
+               (cons 'horiz-margin code-35398)
+               (cons 'min-width code-35400)
+               (cons 'min-height code-35402)
+               (cons 'stretchable-width code-35404)
+               (cons 'stretchable-height code-35406)))))
+           (code-35410 (new prop:atom% (value 'DeleteTournamentButton)))
+           (code-35409
+            (new
+             prop:field-id%
+             (value code-35410)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35412 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35411
+            (new
+             prop:field-id%
+             (value code-35412)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35416 (new prop:atom% (value '"Удалить соревнование")))
+           (code-35417 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35418 (new prop:file% (value '#f)))
+           (code-35415
+            (new prop:group% (value (list code-35416 code-35417 code-35418))))
+           (code-35419
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35414
+            (new
+             prop:proc%
+             (value code-35415)
+             (prop-code code-35419)
+             (generate-quoted-code '#t)))
+           (code-35413
+            (new
+             prop:field-id%
+             (value code-35414)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35421
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35420
+            (new
+             prop:field-id%
+             (value code-35421)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35423
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35422
+            (new
+             prop:field-id%
+             (value code-35423)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35426
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35427
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35425
+            (new
+             prop:font%
+             (value code-35426)
+             (prop-code code-35427)
+             (generate-quoted-code '#t)))
+           (code-35424
+            (new
+             prop:field-id%
+             (value code-35425)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35429 (new prop:atom% (value '#t)))
+           (code-35428
+            (new
+             prop:field-id%
+             (value code-35429)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35431 (new prop:atom% (value '2)))
+           (code-35430
+            (new
+             prop:field-id%
+             (value code-35431)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35433 (new prop:atom% (value '2)))
+           (code-35432
+            (new
+             prop:field-id%
+             (value code-35433)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35435 (new prop:atom% (value '0)))
+           (code-35434
+            (new
+             prop:field-id%
+             (value code-35435)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35437 (new prop:atom% (value '0)))
+           (code-35436
+            (new
+             prop:field-id%
+             (value code-35437)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35439 (new prop:atom% (value '#f)))
+           (code-35438
+            (new
+             prop:field-id%
+             (value code-35439)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35441 (new prop:atom% (value '#f)))
+           (code-35440
+            (new
+             prop:field-id%
+             (value code-35441)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35408
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35315)
+             (properties
+              (list
+               (cons 'id code-35409)
+               (cons 'code-gen-class code-35411)
+               (cons 'label code-35413)
+               (cons 'callback code-35420)
+               (cons 'style code-35422)
+               (cons 'font code-35424)
+               (cons 'enabled code-35428)
+               (cons 'vert-margin code-35430)
+               (cons 'horiz-margin code-35432)
+               (cons 'min-width code-35434)
+               (cons 'min-height code-35436)
+               (cons 'stretchable-width code-35438)
+               (cons 'stretchable-height code-35440)))))
+           (code-35444 (new prop:atom% (value 'TournamentBox)))
+           (code-35443
+            (new
+             prop:field-id%
+             (value code-35444)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35446
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35445
+            (new
+             prop:field-id%
+             (value code-35446)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35448 (new prop:atom% (value '"Соревнования")))
+           (code-35447
+            (new
+             prop:field-id%
+             (value code-35448)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35450
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35449
+            (new
+             prop:field-id%
+             (value code-35450)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35453
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35454
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35452
+            (new
+             prop:font%
+             (value code-35453)
+             (prop-code code-35454)
+             (generate-quoted-code '#t)))
+           (code-35451
+            (new
+             prop:field-id%
+             (value code-35452)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35456 (new prop:atom% (value '#t)))
+           (code-35455
+            (new
+             prop:field-id%
+             (value code-35456)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35458 (new prop:atom% (value '2)))
+           (code-35457
+            (new
+             prop:field-id%
+             (value code-35458)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35460 (new prop:atom% (value '2)))
+           (code-35459
+            (new
+             prop:field-id%
+             (value code-35460)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35462 (new prop:atom% (value '0)))
+           (code-35461
+            (new
+             prop:field-id%
+             (value code-35462)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35464 (new prop:atom% (value '0)))
+           (code-35463
+            (new
+             prop:field-id%
+             (value code-35464)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35467
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35468
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35466 (new prop:group% (value (list code-35467 code-35468))))
+           (code-35465
+            (new
+             prop:field-id%
+             (value code-35466)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35470 (new prop:atom% (value '0)))
+           (code-35469
+            (new
+             prop:field-id%
+             (value code-35470)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35472 (new prop:atom% (value '0)))
+           (code-35471
+            (new
+             prop:field-id%
+             (value code-35472)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35474 (new prop:atom% (value '#t)))
+           (code-35473
+            (new
+             prop:field-id%
+             (value code-35474)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35476 (new prop:atom% (value '#t)))
+           (code-35475
+            (new
+             prop:field-id%
+             (value code-35476)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35442
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35249)
+             (properties
+              (list
+               (cons 'id code-35443)
+               (cons 'code-gen-class code-35445)
+               (cons 'label code-35447)
+               (cons 'style code-35449)
+               (cons 'font code-35451)
+               (cons 'enabled code-35455)
+               (cons 'vert-margin code-35457)
+               (cons 'horiz-margin code-35459)
+               (cons 'border code-35461)
+               (cons 'spacing code-35463)
+               (cons 'alignment code-35465)
+               (cons 'min-width code-35469)
+               (cons 'min-height code-35471)
+               (cons 'stretchable-width code-35473)
+               (cons 'stretchable-height code-35475)))))
+           (code-35479 (new prop:atom% (value 'RatingTab)))
+           (code-35478
+            (new
+             prop:field-id%
+             (value code-35479)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35481
+            (new
+             prop:code%
+             (value
+              (class vertical-panel%
+                (init parent)
+                (init-field label)
+                (super-new (parent parent))
+                (send parent add-child-panel this label)))
+             (value-code
+              '(class vertical-panel%
+                 (init parent)
+                 (init-field label)
+                 (super-new (parent parent))
+                 (send parent add-child-panel this label)))))
+           (code-35480
+            (new
+             prop:field-id%
+             (value code-35481)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35483 (new prop:atom% (value '"Рейтинг")))
+           (code-35482
+            (new
+             prop:field-id%
+             (value code-35483)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35485
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35484
+            (new
+             prop:field-id%
+             (value code-35485)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35487 (new prop:atom% (value '#t)))
+           (code-35486
+            (new
+             prop:field-id%
+             (value code-35487)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35489 (new prop:atom% (value '0)))
+           (code-35488
+            (new
+             prop:field-id%
+             (value code-35489)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35491 (new prop:atom% (value '0)))
+           (code-35490
+            (new
+             prop:field-id%
+             (value code-35491)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35493 (new prop:atom% (value '0)))
+           (code-35492
+            (new
+             prop:field-id%
+             (value code-35493)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35495 (new prop:atom% (value '0)))
+           (code-35494
+            (new
+             prop:field-id%
+             (value code-35495)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35498
+            (new
+             prop:one-of%
+             (value 'left)
+             (choices (list 'left 'center 'right))))
+           (code-35499
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35497 (new prop:group% (value (list code-35498 code-35499))))
+           (code-35496
+            (new
+             prop:field-id%
+             (value code-35497)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35501 (new prop:atom% (value '0)))
+           (code-35500
+            (new
+             prop:field-id%
+             (value code-35501)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35503 (new prop:atom% (value '0)))
+           (code-35502
+            (new
+             prop:field-id%
+             (value code-35503)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35505 (new prop:atom% (value '#t)))
+           (code-35504
+            (new
+             prop:field-id%
+             (value code-35505)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35507 (new prop:atom% (value '#t)))
+           (code-35506
+            (new
+             prop:field-id%
+             (value code-35507)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35477
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'tab))
+             (mred-parent code-34988)
+             (properties
+              (list
+               (cons 'id code-35478)
+               (cons 'code-gen-class code-35480)
+               (cons 'label code-35482)
+               (cons 'style code-35484)
+               (cons 'enabled code-35486)
+               (cons 'vert-margin code-35488)
+               (cons 'horiz-margin code-35490)
+               (cons 'border code-35492)
+               (cons 'spacing code-35494)
+               (cons 'alignment code-35496)
+               (cons 'min-width code-35500)
+               (cons 'min-height code-35502)
+               (cons 'stretchable-width code-35504)
+               (cons 'stretchable-height code-35506)))))
+           (code-35510 (new prop:atom% (value 'RationOptionsPanel)))
+           (code-35509
+            (new
+             prop:field-id%
+             (value code-35510)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35512
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35511
+            (new
+             prop:field-id%
+             (value code-35512)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35514 (new prop:atom% (value '"Возможности")))
+           (code-35513
+            (new
+             prop:field-id%
+             (value code-35514)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35516
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35515
+            (new
+             prop:field-id%
+             (value code-35516)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35519
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35520
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35518
+            (new
+             prop:font%
+             (value code-35519)
+             (prop-code code-35520)
+             (generate-quoted-code '#t)))
+           (code-35517
+            (new
+             prop:field-id%
+             (value code-35518)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35522 (new prop:atom% (value '#t)))
+           (code-35521
+            (new
+             prop:field-id%
+             (value code-35522)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35524 (new prop:atom% (value '2)))
+           (code-35523
+            (new
+             prop:field-id%
+             (value code-35524)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35526 (new prop:atom% (value '2)))
+           (code-35525
+            (new
+             prop:field-id%
+             (value code-35526)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35528 (new prop:atom% (value '0)))
+           (code-35527
+            (new
+             prop:field-id%
+             (value code-35528)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35530 (new prop:atom% (value '0)))
+           (code-35529
+            (new
+             prop:field-id%
+             (value code-35530)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35533
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35534
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35532 (new prop:group% (value (list code-35533 code-35534))))
+           (code-35531
+            (new
+             prop:field-id%
+             (value code-35532)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35536 (new prop:atom% (value '0)))
+           (code-35535
+            (new
+             prop:field-id%
+             (value code-35536)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35538 (new prop:atom% (value '50)))
+           (code-35537
+            (new
+             prop:field-id%
+             (value code-35538)
+             (field-id 'min-height)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35540 (new prop:atom% (value '#t)))
+           (code-35539
+            (new
+             prop:field-id%
+             (value code-35540)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35542 (new prop:atom% (value '#f)))
+           (code-35541
+            (new
+             prop:field-id%
+             (value code-35542)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35508
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35477)
+             (properties
+              (list
+               (cons 'id code-35509)
+               (cons 'code-gen-class code-35511)
+               (cons 'label code-35513)
+               (cons 'style code-35515)
+               (cons 'font code-35517)
+               (cons 'enabled code-35521)
+               (cons 'vert-margin code-35523)
+               (cons 'horiz-margin code-35525)
+               (cons 'border code-35527)
+               (cons 'spacing code-35529)
+               (cons 'alignment code-35531)
+               (cons 'min-width code-35535)
+               (cons 'min-height code-35537)
+               (cons 'stretchable-width code-35539)
+               (cons 'stretchable-height code-35541)))))
+           (code-35545 (new prop:atom% (value 'RationOptionsBox)))
+           (code-35544
+            (new
+             prop:field-id%
+             (value code-35545)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35547
+            (new
+             prop:code%
+             (value horizontal-pane%)
+             (value-code 'horizontal-pane%)))
+           (code-35546
+            (new
+             prop:field-id%
+             (value code-35547)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35549 (new prop:atom% (value '0)))
+           (code-35548
+            (new
+             prop:field-id%
+             (value code-35549)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35551 (new prop:atom% (value '0)))
+           (code-35550
+            (new
+             prop:field-id%
+             (value code-35551)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35553 (new prop:atom% (value '0)))
+           (code-35552
+            (new
+             prop:field-id%
+             (value code-35553)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35555 (new prop:atom% (value '100)))
+           (code-35554
+            (new
+             prop:field-id%
+             (value code-35555)
+             (field-id 'spacing)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35558
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35559
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35557 (new prop:group% (value (list code-35558 code-35559))))
+           (code-35556
+            (new
+             prop:field-id%
+             (value code-35557)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35561 (new prop:atom% (value '0)))
+           (code-35560
+            (new
+             prop:field-id%
+             (value code-35561)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35563 (new prop:atom% (value '0)))
+           (code-35562
+            (new
+             prop:field-id%
+             (value code-35563)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35565 (new prop:atom% (value '#t)))
+           (code-35564
+            (new
+             prop:field-id%
+             (value code-35565)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35567 (new prop:atom% (value '#t)))
+           (code-35566
+            (new
+             prop:field-id%
+             (value code-35567)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35543
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'horizontal-pane))
+             (mred-parent code-35508)
+             (properties
+              (list
+               (cons 'id code-35544)
+               (cons 'code-gen-class code-35546)
+               (cons 'vert-margin code-35548)
+               (cons 'horiz-margin code-35550)
+               (cons 'border code-35552)
+               (cons 'spacing code-35554)
+               (cons 'alignment code-35556)
+               (cons 'min-width code-35560)
+               (cons 'min-height code-35562)
+               (cons 'stretchable-width code-35564)
+               (cons 'stretchable-height code-35566)))))
+           (code-35570 (new prop:atom% (value 'AddRatingButton)))
+           (code-35569
+            (new
+             prop:field-id%
+             (value code-35570)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35572 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35571
+            (new
+             prop:field-id%
+             (value code-35572)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35576 (new prop:atom% (value '"Добавить рейтинг")))
+           (code-35577 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35578 (new prop:file% (value '#f)))
+           (code-35575
+            (new prop:group% (value (list code-35576 code-35577 code-35578))))
+           (code-35579
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35574
+            (new
+             prop:proc%
+             (value code-35575)
+             (prop-code code-35579)
+             (generate-quoted-code '#t)))
+           (code-35573
+            (new
+             prop:field-id%
+             (value code-35574)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35581
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35580
+            (new
+             prop:field-id%
+             (value code-35581)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35583
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35582
+            (new
+             prop:field-id%
+             (value code-35583)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35586
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35587
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35585
+            (new
+             prop:font%
+             (value code-35586)
+             (prop-code code-35587)
+             (generate-quoted-code '#t)))
+           (code-35584
+            (new
+             prop:field-id%
+             (value code-35585)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35589 (new prop:atom% (value '#t)))
+           (code-35588
+            (new
+             prop:field-id%
+             (value code-35589)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35591 (new prop:atom% (value '2)))
+           (code-35590
+            (new
+             prop:field-id%
+             (value code-35591)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35593 (new prop:atom% (value '2)))
+           (code-35592
+            (new
+             prop:field-id%
+             (value code-35593)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35595 (new prop:atom% (value '0)))
+           (code-35594
+            (new
+             prop:field-id%
+             (value code-35595)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35597 (new prop:atom% (value '0)))
+           (code-35596
+            (new
+             prop:field-id%
+             (value code-35597)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35599 (new prop:atom% (value '#f)))
+           (code-35598
+            (new
+             prop:field-id%
+             (value code-35599)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35601 (new prop:atom% (value '#f)))
+           (code-35600
+            (new
+             prop:field-id%
+             (value code-35601)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35568
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35543)
+             (properties
+              (list
+               (cons 'id code-35569)
+               (cons 'code-gen-class code-35571)
+               (cons 'label code-35573)
+               (cons 'callback code-35580)
+               (cons 'style code-35582)
+               (cons 'font code-35584)
+               (cons 'enabled code-35588)
+               (cons 'vert-margin code-35590)
+               (cons 'horiz-margin code-35592)
+               (cons 'min-width code-35594)
+               (cons 'min-height code-35596)
+               (cons 'stretchable-width code-35598)
+               (cons 'stretchable-height code-35600)))))
+           (code-35604 (new prop:atom% (value 'EditRatingButton)))
+           (code-35603
+            (new
+             prop:field-id%
+             (value code-35604)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35606 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35605
+            (new
+             prop:field-id%
+             (value code-35606)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35610 (new prop:atom% (value '"Изменить рейтинг")))
+           (code-35611 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35612 (new prop:file% (value '#f)))
+           (code-35609
+            (new prop:group% (value (list code-35610 code-35611 code-35612))))
+           (code-35613
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35608
+            (new
+             prop:proc%
+             (value code-35609)
+             (prop-code code-35613)
+             (generate-quoted-code '#t)))
+           (code-35607
+            (new
+             prop:field-id%
+             (value code-35608)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35615
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35614
+            (new
+             prop:field-id%
+             (value code-35615)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35617
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35616
+            (new
+             prop:field-id%
+             (value code-35617)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35620
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35621
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35619
+            (new
+             prop:font%
+             (value code-35620)
+             (prop-code code-35621)
+             (generate-quoted-code '#t)))
+           (code-35618
+            (new
+             prop:field-id%
+             (value code-35619)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35623 (new prop:atom% (value '#t)))
+           (code-35622
+            (new
+             prop:field-id%
+             (value code-35623)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35625 (new prop:atom% (value '2)))
+           (code-35624
+            (new
+             prop:field-id%
+             (value code-35625)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35627 (new prop:atom% (value '2)))
+           (code-35626
+            (new
+             prop:field-id%
+             (value code-35627)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35629 (new prop:atom% (value '0)))
+           (code-35628
+            (new
+             prop:field-id%
+             (value code-35629)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35631 (new prop:atom% (value '0)))
+           (code-35630
+            (new
+             prop:field-id%
+             (value code-35631)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35633 (new prop:atom% (value '#f)))
+           (code-35632
+            (new
+             prop:field-id%
+             (value code-35633)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35635 (new prop:atom% (value '#f)))
+           (code-35634
+            (new
+             prop:field-id%
+             (value code-35635)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35602
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35543)
+             (properties
+              (list
+               (cons 'id code-35603)
+               (cons 'code-gen-class code-35605)
+               (cons 'label code-35607)
+               (cons 'callback code-35614)
+               (cons 'style code-35616)
+               (cons 'font code-35618)
+               (cons 'enabled code-35622)
+               (cons 'vert-margin code-35624)
+               (cons 'horiz-margin code-35626)
+               (cons 'min-width code-35628)
+               (cons 'min-height code-35630)
+               (cons 'stretchable-width code-35632)
+               (cons 'stretchable-height code-35634)))))
+           (code-35638 (new prop:atom% (value 'DeleteRatingButton)))
+           (code-35637
+            (new
+             prop:field-id%
+             (value code-35638)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35640 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35639
+            (new
+             prop:field-id%
+             (value code-35640)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35644 (new prop:atom% (value '"Удалить рейтинг")))
+           (code-35645 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35646 (new prop:file% (value '#f)))
+           (code-35643
+            (new prop:group% (value (list code-35644 code-35645 code-35646))))
+           (code-35647
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35642
+            (new
+             prop:proc%
+             (value code-35643)
+             (prop-code code-35647)
+             (generate-quoted-code '#t)))
+           (code-35641
+            (new
+             prop:field-id%
+             (value code-35642)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35649
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35648
+            (new
+             prop:field-id%
+             (value code-35649)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35651
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35650
+            (new
+             prop:field-id%
+             (value code-35651)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35654
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35655
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35653
+            (new
+             prop:font%
+             (value code-35654)
+             (prop-code code-35655)
+             (generate-quoted-code '#t)))
+           (code-35652
+            (new
+             prop:field-id%
+             (value code-35653)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35657 (new prop:atom% (value '#t)))
+           (code-35656
+            (new
+             prop:field-id%
+             (value code-35657)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35659 (new prop:atom% (value '2)))
+           (code-35658
+            (new
+             prop:field-id%
+             (value code-35659)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35661 (new prop:atom% (value '2)))
+           (code-35660
+            (new
+             prop:field-id%
+             (value code-35661)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35663 (new prop:atom% (value '0)))
+           (code-35662
+            (new
+             prop:field-id%
+             (value code-35663)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35665 (new prop:atom% (value '0)))
+           (code-35664
+            (new
+             prop:field-id%
+             (value code-35665)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35667 (new prop:atom% (value '#f)))
+           (code-35666
+            (new
+             prop:field-id%
+             (value code-35667)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35669 (new prop:atom% (value '#f)))
+           (code-35668
+            (new
+             prop:field-id%
+             (value code-35669)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35636
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35543)
+             (properties
+              (list
+               (cons 'id code-35637)
+               (cons 'code-gen-class code-35639)
+               (cons 'label code-35641)
+               (cons 'callback code-35648)
+               (cons 'style code-35650)
+               (cons 'font code-35652)
+               (cons 'enabled code-35656)
+               (cons 'vert-margin code-35658)
+               (cons 'horiz-margin code-35660)
+               (cons 'min-width code-35662)
+               (cons 'min-height code-35664)
+               (cons 'stretchable-width code-35666)
+               (cons 'stretchable-height code-35668)))))
+           (code-35672 (new prop:atom% (value 'RatingBox)))
+           (code-35671
+            (new
+             prop:field-id%
+             (value code-35672)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35674
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35673
+            (new
+             prop:field-id%
+             (value code-35674)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35676 (new prop:atom% (value '"Рейтинг")))
+           (code-35675
+            (new
+             prop:field-id%
+             (value code-35676)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35678
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35677
+            (new
+             prop:field-id%
+             (value code-35678)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35681
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35682
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35680
+            (new
+             prop:font%
+             (value code-35681)
+             (prop-code code-35682)
+             (generate-quoted-code '#t)))
+           (code-35679
+            (new
+             prop:field-id%
+             (value code-35680)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35684 (new prop:atom% (value '#t)))
+           (code-35683
+            (new
+             prop:field-id%
+             (value code-35684)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35686 (new prop:atom% (value '2)))
+           (code-35685
+            (new
+             prop:field-id%
+             (value code-35686)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35688 (new prop:atom% (value '2)))
+           (code-35687
+            (new
+             prop:field-id%
+             (value code-35688)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35690 (new prop:atom% (value '0)))
+           (code-35689
+            (new
+             prop:field-id%
+             (value code-35690)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35692 (new prop:atom% (value '0)))
+           (code-35691
+            (new
+             prop:field-id%
+             (value code-35692)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35695
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35696
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35694 (new prop:group% (value (list code-35695 code-35696))))
+           (code-35693
+            (new
+             prop:field-id%
+             (value code-35694)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35698 (new prop:atom% (value '0)))
+           (code-35697
+            (new
+             prop:field-id%
+             (value code-35698)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35700 (new prop:atom% (value '0)))
+           (code-35699
+            (new
+             prop:field-id%
+             (value code-35700)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35702 (new prop:atom% (value '#t)))
+           (code-35701
+            (new
+             prop:field-id%
+             (value code-35702)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35704 (new prop:atom% (value '#t)))
+           (code-35703
+            (new
+             prop:field-id%
+             (value code-35704)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35670
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35477)
+             (properties
+              (list
+               (cons 'id code-35671)
+               (cons 'code-gen-class code-35673)
+               (cons 'label code-35675)
+               (cons 'style code-35677)
+               (cons 'font code-35679)
+               (cons 'enabled code-35683)
+               (cons 'vert-margin code-35685)
+               (cons 'horiz-margin code-35687)
+               (cons 'border code-35689)
+               (cons 'spacing code-35691)
+               (cons 'alignment code-35693)
+               (cons 'min-width code-35697)
+               (cons 'min-height code-35699)
+               (cons 'stretchable-width code-35701)
+               (cons 'stretchable-height code-35703)))))
+           (code-35707 (new prop:atom% (value 'AddTeamDialog)))
+           (code-35706
+            (new
+             prop:field-id%
+             (value code-35707)
+             (field-id 'id)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35709 (new prop:code% (value dialog%) (value-code 'dialog%)))
+           (code-35708
+            (new
+             prop:field-id%
+             (value code-35709)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35711 (new prop:atom% (value '"Добавление команды")))
+           (code-35710
+            (new
+             prop:field-id%
+             (value code-35711)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35715 (new prop:atom% (value '#f)))
+           (code-35716 (new prop:atom% (value '0)))
+           (code-35714 (new prop:hgroup% (value (list code-35715 code-35716))))
+           (code-35717
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35713
+            (new
+             prop:proc%
+             (value code-35714)
+             (prop-code code-35717)
+             (generate-quoted-code '#f)))
+           (code-35712
+            (new
+             prop:field-id%
+             (value code-35713)
+             (field-id 'width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35721 (new prop:atom% (value '#f)))
+           (code-35722 (new prop:atom% (value '0)))
+           (code-35720 (new prop:hgroup% (value (list code-35721 code-35722))))
+           (code-35723
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35719
+            (new
+             prop:proc%
+             (value code-35720)
+             (prop-code code-35723)
+             (generate-quoted-code '#f)))
+           (code-35718
+            (new
+             prop:field-id%
+             (value code-35719)
+             (field-id 'height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35727 (new prop:atom% (value '#f)))
+           (code-35728 (new prop:atom% (value '0)))
+           (code-35726 (new prop:hgroup% (value (list code-35727 code-35728))))
+           (code-35729
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35725
+            (new
+             prop:proc%
+             (value code-35726)
+             (prop-code code-35729)
+             (generate-quoted-code '#f)))
+           (code-35724
+            (new
+             prop:field-id%
+             (value code-35725)
+             (field-id 'x)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35733 (new prop:atom% (value '#f)))
+           (code-35734 (new prop:atom% (value '0)))
+           (code-35732 (new prop:hgroup% (value (list code-35733 code-35734))))
+           (code-35735
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35731
+            (new
+             prop:proc%
+             (value code-35732)
+             (prop-code code-35735)
+             (generate-quoted-code '#f)))
+           (code-35730
+            (new
+             prop:field-id%
+             (value code-35731)
+             (field-id 'y)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35738
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'no-caption 'resize-border 'no-sheet))))
+           (code-35737 (new prop:popup% (value code-35738)))
+           (code-35736
+            (new
+             prop:field-id%
+             (value code-35737)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35740 (new prop:atom% (value '#t)))
+           (code-35739
+            (new
+             prop:field-id%
+             (value code-35740)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35742 (new prop:atom% (value '0)))
+           (code-35741
+            (new
+             prop:field-id%
+             (value code-35742)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35744 (new prop:atom% (value '0)))
+           (code-35743
+            (new
+             prop:field-id%
+             (value code-35744)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35747
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35748
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35746 (new prop:group% (value (list code-35747 code-35748))))
+           (code-35745
+            (new
+             prop:field-id%
+             (value code-35746)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35750 (new prop:atom% (value '300)))
+           (code-35749
+            (new
+             prop:field-id%
+             (value code-35750)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35752 (new prop:atom% (value '200)))
+           (code-35751
+            (new
+             prop:field-id%
+             (value code-35752)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35754 (new prop:atom% (value '#t)))
+           (code-35753
+            (new
+             prop:field-id%
+             (value code-35754)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35756 (new prop:atom% (value '#t)))
+           (code-35755
+            (new
+             prop:field-id%
+             (value code-35756)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35758 (new prop:atom% (value '#f)))
+           (code-35757
+            (new
+             prop:field-id%
+             (value code-35758)
+             (field-id 'show-at-init)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35705
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'dialog))
+             (mred-parent code-34934)
+             (properties
+              (list
+               (cons 'id code-35706)
+               (cons 'code-gen-class code-35708)
+               (cons 'label code-35710)
+               (cons 'width code-35712)
+               (cons 'height code-35718)
+               (cons 'x code-35724)
+               (cons 'y code-35730)
+               (cons 'style code-35736)
+               (cons 'enabled code-35739)
+               (cons 'border code-35741)
+               (cons 'spacing code-35743)
+               (cons 'alignment code-35745)
+               (cons 'min-width code-35749)
+               (cons 'min-height code-35751)
+               (cons 'stretchable-width code-35753)
+               (cons 'stretchable-height code-35755)
+               (cons 'show-at-init code-35757)))))
+           (code-35761 (new prop:atom% (value 'AddTeamBox)))
+           (code-35760
+            (new
+             prop:field-id%
+             (value code-35761)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35763
+            (new
+             prop:code%
+             (value group-box-panel%)
+             (value-code 'group-box-panel%)))
+           (code-35762
+            (new
+             prop:field-id%
+             (value code-35763)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35765 (new prop:atom% (value '"Введите данные о команде")))
+           (code-35764
+            (new
+             prop:field-id%
+             (value code-35765)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35767
+            (new prop:some-of% (value (list)) (choices (list 'deleted))))
+           (code-35766
+            (new
+             prop:field-id%
+             (value code-35767)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35770
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35771
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35769
+            (new
+             prop:font%
+             (value code-35770)
+             (prop-code code-35771)
+             (generate-quoted-code '#t)))
+           (code-35768
+            (new
+             prop:field-id%
+             (value code-35769)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35773 (new prop:atom% (value '#t)))
+           (code-35772
+            (new
+             prop:field-id%
+             (value code-35773)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35775 (new prop:atom% (value '2)))
+           (code-35774
+            (new
+             prop:field-id%
+             (value code-35775)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35777 (new prop:atom% (value '2)))
+           (code-35776
+            (new
+             prop:field-id%
+             (value code-35777)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35779 (new prop:atom% (value '0)))
+           (code-35778
+            (new
+             prop:field-id%
+             (value code-35779)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35781 (new prop:atom% (value '0)))
+           (code-35780
+            (new
+             prop:field-id%
+             (value code-35781)
+             (field-id 'spacing)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35784
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35785
+            (new
+             prop:one-of%
+             (value 'top)
+             (choices (list 'top 'center 'bottom))))
+           (code-35783 (new prop:group% (value (list code-35784 code-35785))))
+           (code-35782
+            (new
+             prop:field-id%
+             (value code-35783)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35787 (new prop:atom% (value '0)))
+           (code-35786
+            (new
+             prop:field-id%
+             (value code-35787)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35789 (new prop:atom% (value '0)))
+           (code-35788
+            (new
+             prop:field-id%
+             (value code-35789)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35791 (new prop:atom% (value '#t)))
+           (code-35790
+            (new
+             prop:field-id%
+             (value code-35791)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35793 (new prop:atom% (value '#t)))
+           (code-35792
+            (new
+             prop:field-id%
+             (value code-35793)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35759
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'group-box-panel))
+             (mred-parent code-35705)
+             (properties
+              (list
+               (cons 'id code-35760)
+               (cons 'code-gen-class code-35762)
+               (cons 'label code-35764)
+               (cons 'style code-35766)
+               (cons 'font code-35768)
+               (cons 'enabled code-35772)
+               (cons 'vert-margin code-35774)
+               (cons 'horiz-margin code-35776)
+               (cons 'border code-35778)
+               (cons 'spacing code-35780)
+               (cons 'alignment code-35782)
+               (cons 'min-width code-35786)
+               (cons 'min-height code-35788)
+               (cons 'stretchable-width code-35790)
+               (cons 'stretchable-height code-35792)))))
+           (code-35796 (new prop:atom% (value 'TeamNameField)))
+           (code-35795
+            (new
+             prop:field-id%
+             (value code-35796)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35798
+            (new prop:code% (value text-field%) (value-code 'text-field%)))
+           (code-35797
+            (new
+             prop:field-id%
+             (value code-35798)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35802 (new prop:atom% (value '#t)))
+           (code-35803 (new prop:atom% (value '"Название")))
+           (code-35801 (new prop:hgroup% (value (list code-35802 code-35803))))
+           (code-35804
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35800
+            (new
+             prop:proc%
+             (value code-35801)
+             (prop-code code-35804)
+             (generate-quoted-code '#f)))
+           (code-35799
+            (new
+             prop:field-id%
+             (value code-35800)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35806
+            (new
+             prop:code%
+             (value (lambda (text-field control-event) (void)))
+             (value-code '(lambda (text-field control-event) (void)))))
+           (code-35805
+            (new
+             prop:field-id%
+             (value code-35806)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35808 (new prop:atom% (value '"")))
+           (code-35807
+            (new
+             prop:field-id%
+             (value code-35808)
+             (field-id 'init-value)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35812
+            (new
+             prop:one-of%
+             (value 'single)
+             (choices (list 'single 'multiple))))
+           (code-35813
+            (new
+             prop:one-of%
+             (value 'horizontal-label)
+             (choices (list 'vertical-label 'horizontal-label))))
+           (code-35814
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'hscroll 'password 'deleted))))
+           (code-35811
+            (new prop:group% (value (list code-35812 code-35813 code-35814))))
+           (code-35815
+            (new
+             prop:code%
+             (value (λ (l) (list* (first l) (second l) (third l))))
+             (value-code '(λ (l) (list* (first l) (second l) (third l))))))
+           (code-35810
+            (new
+             prop:proc%
+             (value code-35811)
+             (prop-code code-35815)
+             (generate-quoted-code '#t)))
+           (code-35809
+            (new
+             prop:field-id%
+             (value code-35810)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35818
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35819
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35817
+            (new
+             prop:font%
+             (value code-35818)
+             (prop-code code-35819)
+             (generate-quoted-code '#t)))
+           (code-35816
+            (new
+             prop:field-id%
+             (value code-35817)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35821 (new prop:atom% (value '#t)))
+           (code-35820
+            (new
+             prop:field-id%
+             (value code-35821)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35823 (new prop:atom% (value '2)))
+           (code-35822
+            (new
+             prop:field-id%
+             (value code-35823)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35825 (new prop:atom% (value '2)))
+           (code-35824
+            (new
+             prop:field-id%
+             (value code-35825)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35827 (new prop:atom% (value '400)))
+           (code-35826
+            (new
+             prop:field-id%
+             (value code-35827)
+             (field-id 'min-width)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35829 (new prop:atom% (value '0)))
+           (code-35828
+            (new
+             prop:field-id%
+             (value code-35829)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35831 (new prop:atom% (value '#f)))
+           (code-35830
+            (new
+             prop:field-id%
+             (value code-35831)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35833 (new prop:atom% (value '#f)))
+           (code-35832
+            (new
+             prop:field-id%
+             (value code-35833)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35794
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'text-field))
+             (mred-parent code-35759)
+             (properties
+              (list
+               (cons 'id code-35795)
+               (cons 'code-gen-class code-35797)
+               (cons 'label code-35799)
+               (cons 'callback code-35805)
+               (cons 'init-value code-35807)
+               (cons 'style code-35809)
+               (cons 'font code-35816)
+               (cons 'enabled code-35820)
+               (cons 'vert-margin code-35822)
+               (cons 'horiz-margin code-35824)
+               (cons 'min-width code-35826)
+               (cons 'min-height code-35828)
+               (cons 'stretchable-width code-35830)
+               (cons 'stretchable-height code-35832)))))
+           (code-35836 (new prop:atom% (value 'TeamCityField)))
+           (code-35835
+            (new
+             prop:field-id%
+             (value code-35836)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35838
+            (new prop:code% (value text-field%) (value-code 'text-field%)))
+           (code-35837
+            (new
+             prop:field-id%
+             (value code-35838)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35842 (new prop:atom% (value '#t)))
+           (code-35843 (new prop:atom% (value '"Город")))
+           (code-35841 (new prop:hgroup% (value (list code-35842 code-35843))))
+           (code-35844
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35840
+            (new
+             prop:proc%
+             (value code-35841)
+             (prop-code code-35844)
+             (generate-quoted-code '#f)))
+           (code-35839
+            (new
+             prop:field-id%
+             (value code-35840)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35846
+            (new
+             prop:code%
+             (value (lambda (text-field control-event) (void)))
+             (value-code '(lambda (text-field control-event) (void)))))
+           (code-35845
+            (new
+             prop:field-id%
+             (value code-35846)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35848 (new prop:atom% (value '"")))
+           (code-35847
+            (new
+             prop:field-id%
+             (value code-35848)
+             (field-id 'init-value)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35852
+            (new
+             prop:one-of%
+             (value 'single)
+             (choices (list 'single 'multiple))))
+           (code-35853
+            (new
+             prop:one-of%
+             (value 'horizontal-label)
+             (choices (list 'vertical-label 'horizontal-label))))
+           (code-35854
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'hscroll 'password 'deleted))))
+           (code-35851
+            (new prop:group% (value (list code-35852 code-35853 code-35854))))
+           (code-35855
+            (new
+             prop:code%
+             (value (λ (l) (list* (first l) (second l) (third l))))
+             (value-code '(λ (l) (list* (first l) (second l) (third l))))))
+           (code-35850
+            (new
+             prop:proc%
+             (value code-35851)
+             (prop-code code-35855)
+             (generate-quoted-code '#t)))
+           (code-35849
+            (new
+             prop:field-id%
+             (value code-35850)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35858
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35859
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35857
+            (new
+             prop:font%
+             (value code-35858)
+             (prop-code code-35859)
+             (generate-quoted-code '#t)))
+           (code-35856
+            (new
+             prop:field-id%
+             (value code-35857)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35861 (new prop:atom% (value '#t)))
+           (code-35860
+            (new
+             prop:field-id%
+             (value code-35861)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35863 (new prop:atom% (value '2)))
+           (code-35862
+            (new
+             prop:field-id%
+             (value code-35863)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35865 (new prop:atom% (value '2)))
+           (code-35864
+            (new
+             prop:field-id%
+             (value code-35865)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35867 (new prop:atom% (value '400)))
+           (code-35866
+            (new
+             prop:field-id%
+             (value code-35867)
+             (field-id 'min-width)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35869 (new prop:atom% (value '0)))
+           (code-35868
+            (new
+             prop:field-id%
+             (value code-35869)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35871 (new prop:atom% (value '#f)))
+           (code-35870
+            (new
+             prop:field-id%
+             (value code-35871)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35873 (new prop:atom% (value '#f)))
+           (code-35872
+            (new
+             prop:field-id%
+             (value code-35873)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35834
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'text-field))
+             (mred-parent code-35759)
+             (properties
+              (list
+               (cons 'id code-35835)
+               (cons 'code-gen-class code-35837)
+               (cons 'label code-35839)
+               (cons 'callback code-35845)
+               (cons 'init-value code-35847)
+               (cons 'style code-35849)
+               (cons 'font code-35856)
+               (cons 'enabled code-35860)
+               (cons 'vert-margin code-35862)
+               (cons 'horiz-margin code-35864)
+               (cons 'min-width code-35866)
+               (cons 'min-height code-35868)
+               (cons 'stretchable-width code-35870)
+               (cons 'stretchable-height code-35872)))))
+           (code-35876 (new prop:atom% (value 'TeamCoachField)))
+           (code-35875
+            (new
+             prop:field-id%
+             (value code-35876)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35878
+            (new prop:code% (value text-field%) (value-code 'text-field%)))
+           (code-35877
+            (new
+             prop:field-id%
+             (value code-35878)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35882 (new prop:atom% (value '#t)))
+           (code-35883 (new prop:atom% (value '"Тренер")))
+           (code-35881 (new prop:hgroup% (value (list code-35882 code-35883))))
+           (code-35884
+            (new
+             prop:code%
+             (value (lambda (l) (and (first l) (second l))))
+             (value-code '(lambda (l) (and (first l) (second l))))))
+           (code-35880
+            (new
+             prop:proc%
+             (value code-35881)
+             (prop-code code-35884)
+             (generate-quoted-code '#f)))
+           (code-35879
+            (new
+             prop:field-id%
+             (value code-35880)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35886
+            (new
+             prop:code%
+             (value (lambda (text-field control-event) (void)))
+             (value-code '(lambda (text-field control-event) (void)))))
+           (code-35885
+            (new
+             prop:field-id%
+             (value code-35886)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35888 (new prop:atom% (value '"")))
+           (code-35887
+            (new
+             prop:field-id%
+             (value code-35888)
+             (field-id 'init-value)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35892
+            (new
+             prop:one-of%
+             (value 'single)
+             (choices (list 'single 'multiple))))
+           (code-35893
+            (new
+             prop:one-of%
+             (value 'horizontal-label)
+             (choices (list 'vertical-label 'horizontal-label))))
+           (code-35894
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'hscroll 'password 'deleted))))
+           (code-35891
+            (new prop:group% (value (list code-35892 code-35893 code-35894))))
+           (code-35895
+            (new
+             prop:code%
+             (value (λ (l) (list* (first l) (second l) (third l))))
+             (value-code '(λ (l) (list* (first l) (second l) (third l))))))
+           (code-35890
+            (new
+             prop:proc%
+             (value code-35891)
+             (prop-code code-35895)
+             (generate-quoted-code '#t)))
+           (code-35889
+            (new
+             prop:field-id%
+             (value code-35890)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35898
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35899
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35897
+            (new
+             prop:font%
+             (value code-35898)
+             (prop-code code-35899)
+             (generate-quoted-code '#t)))
+           (code-35896
+            (new
+             prop:field-id%
+             (value code-35897)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35901 (new prop:atom% (value '#t)))
+           (code-35900
+            (new
+             prop:field-id%
+             (value code-35901)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35903 (new prop:atom% (value '2)))
+           (code-35902
+            (new
+             prop:field-id%
+             (value code-35903)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35905 (new prop:atom% (value '2)))
+           (code-35904
+            (new
+             prop:field-id%
+             (value code-35905)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35907 (new prop:atom% (value '400)))
+           (code-35906
+            (new
+             prop:field-id%
+             (value code-35907)
+             (field-id 'min-width)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35909 (new prop:atom% (value '0)))
+           (code-35908
+            (new
+             prop:field-id%
+             (value code-35909)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35912 (new prop:atom% (value '#f)))
+           (code-35911
+            (new
+             prop:field-id%
+             (value code-35912)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35914 (new prop:atom% (value '#f)))
+           (code-35913
+            (new
+             prop:field-id%
+             (value code-35914)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35874
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'text-field))
+             (mred-parent code-35759)
+             (properties
+              (list
+               (cons 'id code-35875)
+               (cons 'code-gen-class code-35877)
+               (cons 'label code-35879)
+               (cons 'callback code-35885)
+               (cons 'init-value code-35887)
+               (cons 'style code-35889)
+               (cons 'font code-35896)
+               (cons 'enabled code-35900)
+               (cons 'vert-margin code-35902)
+               (cons 'horiz-margin code-35904)
+               (cons 'min-width code-35906)
+               (cons 'min-height code-35908)
+               (cons 'stretchable-width code-35911)
+               (cons 'stretchable-height code-35913)))))
+           (code-35921 (new prop:atom% (value 'AddTeamButtonsPanel)))
+           (code-35920
+            (new
+             prop:field-id%
+             (value code-35921)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35923
+            (new
+             prop:code%
+             (value horizontal-pane%)
+             (value-code 'horizontal-pane%)))
+           (code-35922
+            (new
+             prop:field-id%
+             (value code-35923)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35925 (new prop:atom% (value '0)))
+           (code-35924
+            (new
+             prop:field-id%
+             (value code-35925)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35927 (new prop:atom% (value '0)))
+           (code-35926
+            (new
+             prop:field-id%
+             (value code-35927)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35929 (new prop:atom% (value '0)))
+           (code-35928
+            (new
+             prop:field-id%
+             (value code-35929)
+             (field-id 'border)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35931 (new prop:atom% (value '50)))
+           (code-35930
+            (new
+             prop:field-id%
+             (value code-35931)
+             (field-id 'spacing)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35934
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'left 'center 'right))))
+           (code-35935
+            (new
+             prop:one-of%
+             (value 'center)
+             (choices (list 'top 'center 'bottom))))
+           (code-35933 (new prop:group% (value (list code-35934 code-35935))))
+           (code-35932
+            (new
+             prop:field-id%
+             (value code-35933)
+             (field-id 'alignment)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35937 (new prop:atom% (value '0)))
+           (code-35936
+            (new
+             prop:field-id%
+             (value code-35937)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35939 (new prop:atom% (value '0)))
+           (code-35938
+            (new
+             prop:field-id%
+             (value code-35939)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35941 (new prop:atom% (value '#t)))
+           (code-35940
+            (new
+             prop:field-id%
+             (value code-35941)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35943 (new prop:atom% (value '#t)))
+           (code-35942
+            (new
+             prop:field-id%
+             (value code-35943)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35919
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'horizontal-pane))
+             (mred-parent code-35759)
+             (properties
+              (list
+               (cons 'id code-35920)
+               (cons 'code-gen-class code-35922)
+               (cons 'vert-margin code-35924)
+               (cons 'horiz-margin code-35926)
+               (cons 'border code-35928)
+               (cons 'spacing code-35930)
+               (cons 'alignment code-35932)
+               (cons 'min-width code-35936)
+               (cons 'min-height code-35938)
+               (cons 'stretchable-width code-35940)
+               (cons 'stretchable-height code-35942)))))
+           (code-35946 (new prop:atom% (value 'AddTeamAccept)))
+           (code-35945
+            (new
+             prop:field-id%
+             (value code-35946)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35948 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35947
+            (new
+             prop:field-id%
+             (value code-35948)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35952 (new prop:atom% (value '"Принять")))
+           (code-35953 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35954 (new prop:file% (value '#f)))
+           (code-35951
+            (new prop:group% (value (list code-35952 code-35953 code-35954))))
+           (code-35955
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35950
+            (new
+             prop:proc%
+             (value code-35951)
+             (prop-code code-35955)
+             (generate-quoted-code '#t)))
+           (code-35949
+            (new
+             prop:field-id%
+             (value code-35950)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35957
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35956
+            (new
+             prop:field-id%
+             (value code-35957)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35959
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35958
+            (new
+             prop:field-id%
+             (value code-35959)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35962
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35963
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35961
+            (new
+             prop:font%
+             (value code-35962)
+             (prop-code code-35963)
+             (generate-quoted-code '#t)))
+           (code-35960
+            (new
+             prop:field-id%
+             (value code-35961)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35965 (new prop:atom% (value '#t)))
+           (code-35964
+            (new
+             prop:field-id%
+             (value code-35965)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35967 (new prop:atom% (value '2)))
+           (code-35966
+            (new
+             prop:field-id%
+             (value code-35967)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35969 (new prop:atom% (value '2)))
+           (code-35968
+            (new
+             prop:field-id%
+             (value code-35969)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35971 (new prop:atom% (value '0)))
+           (code-35970
+            (new
+             prop:field-id%
+             (value code-35971)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35973 (new prop:atom% (value '0)))
+           (code-35972
+            (new
+             prop:field-id%
+             (value code-35973)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35975 (new prop:atom% (value '#f)))
+           (code-35974
+            (new
+             prop:field-id%
+             (value code-35975)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35977 (new prop:atom% (value '#f)))
+           (code-35976
+            (new
+             prop:field-id%
+             (value code-35977)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35944
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35919)
+             (properties
+              (list
+               (cons 'id code-35945)
+               (cons 'code-gen-class code-35947)
+               (cons 'label code-35949)
+               (cons 'callback code-35956)
+               (cons 'style code-35958)
+               (cons 'font code-35960)
+               (cons 'enabled code-35964)
+               (cons 'vert-margin code-35966)
+               (cons 'horiz-margin code-35968)
+               (cons 'min-width code-35970)
+               (cons 'min-height code-35972)
+               (cons 'stretchable-width code-35974)
+               (cons 'stretchable-height code-35976)))))
+           (code-35980 (new prop:atom% (value 'AddTeamCancel)))
+           (code-35979
+            (new
+             prop:field-id%
+             (value code-35980)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-35984 (new prop:code% (value button%) (value-code 'button%)))
+           (code-35983
+            (new
+             prop:field-id%
+             (value code-35984)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35988 (new prop:atom% (value '"Отмена")))
+           (code-35989 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-35990 (new prop:file% (value '#f)))
+           (code-35987
+            (new prop:group% (value (list code-35988 code-35989 code-35990))))
+           (code-35991
+            (new
+             prop:code%
+             (value label-bitmap-proc)
+             (value-code 'label-bitmap-proc)))
+           (code-35986
+            (new
+             prop:proc%
+             (value code-35987)
+             (prop-code code-35991)
+             (generate-quoted-code '#t)))
+           (code-35985
+            (new
+             prop:field-id%
+             (value code-35986)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35993
+            (new
+             prop:code%
+             (value (lambda (button control-event) (void)))
+             (value-code '(lambda (button control-event) (void)))))
+           (code-35992
+            (new
+             prop:field-id%
+             (value code-35993)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35995
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'border 'deleted))))
+           (code-35994
+            (new
+             prop:field-id%
+             (value code-35995)
+             (field-id 'style)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35998
+            (new
+             prop:atom%
+             (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
+           (code-35999
+            (new prop:code% (value list->font) (value-code 'list->font)))
+           (code-35997
+            (new
+             prop:font%
+             (value code-35998)
+             (prop-code code-35999)
+             (generate-quoted-code '#t)))
+           (code-35996
+            (new
+             prop:field-id%
+             (value code-35997)
+             (field-id 'font)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36001 (new prop:atom% (value '#t)))
+           (code-36000
+            (new
+             prop:field-id%
+             (value code-36001)
+             (field-id 'enabled)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36003 (new prop:atom% (value '2)))
+           (code-36002
+            (new
+             prop:field-id%
+             (value code-36003)
+             (field-id 'vert-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36005 (new prop:atom% (value '2)))
+           (code-36004
+            (new
+             prop:field-id%
+             (value code-36005)
+             (field-id 'horiz-margin)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36007 (new prop:atom% (value '0)))
+           (code-36006
+            (new
+             prop:field-id%
+             (value code-36007)
+             (field-id 'min-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36009 (new prop:atom% (value '0)))
+           (code-36008
+            (new
+             prop:field-id%
+             (value code-36009)
+             (field-id 'min-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36011 (new prop:atom% (value '#f)))
+           (code-36010
+            (new
+             prop:field-id%
+             (value code-36011)
+             (field-id 'stretchable-width)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-36013 (new prop:atom% (value '#f)))
+           (code-36012
+            (new
+             prop:field-id%
+             (value code-36013)
+             (field-id 'stretchable-height)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-35978
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'button))
+             (mred-parent code-35919)
+             (properties
+              (list
+               (cons 'id code-35979)
+               (cons 'code-gen-class code-35983)
+               (cons 'label code-35985)
+               (cons 'callback code-35992)
+               (cons 'style code-35994)
+               (cons 'font code-35996)
+               (cons 'enabled code-36000)
+               (cons 'vert-margin code-36002)
+               (cons 'horiz-margin code-36004)
+               (cons 'min-width code-36006)
+               (cons 'min-height code-36008)
+               (cons 'stretchable-width code-36010)
+               (cons 'stretchable-height code-36012))))))
+      (list
+       code-34918
+       code-34934
+       code-34988
+       code-35021
+       code-35052
+       code-35087
+       code-35112
+       code-35146
+       code-35180
+       code-35214
+       code-35249
+       code-35280
+       code-35315
+       code-35340
+       code-35374
+       code-35408
+       code-35442
+       code-35477
+       code-35508
+       code-35543
+       code-35568
+       code-35602
+       code-35636
+       code-35670
+       code-35705
+       code-35759
+       code-35794
+       code-35834
+       code-35874
+       code-35919
+       code-35944
+       code-35978)))))
