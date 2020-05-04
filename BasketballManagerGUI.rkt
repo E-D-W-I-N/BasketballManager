@@ -70,8 +70,10 @@
                                                                  (loadTeamData TeamTable))))
          
          ;При нажатии на кнопку "Отмена" очищаются текстовые поля и закрывается окно добавления команды
-         (AddTeamCancel-callback (lambda (button control-event) (list(clearFields TeamNameField TeamCityField TeamCoachField)
-                                                                     (closeDialog AddTeamDialog))))
+         (AddTeamCancel-callback (lambda (button control-event) (list
+                                                                 (setIsEditTeam #f)
+                                                                 (clearFields TeamNameField TeamCityField TeamCoachField)
+                                                                 (closeDialog AddTeamDialog))))
          
          (EditTeamButton-callback (lambda (button control-event) (if (empty? (send TeamTable get-selections))
                                                                      (list
@@ -100,6 +102,7 @@
                                                                            (list
                                                                             (send ChooseFirstTeam clear)
                                                                             (send ChooseSecondTeam clear)
+                                                                            (send AddTournamentDialog set-label "Добавление матча")
                                                                             (joinIdAndName (list-ref TeamData 0) (list-ref TeamData 1))
                                                                             (FillFirstChoise (remove (second IdAndName) IdAndName) ChooseFirstTeam)
                                                                             (FillSecondChoise (remove (send ChooseFirstTeam get-string-selection) IdAndName) ChooseSecondTeam)
@@ -147,8 +150,10 @@
                                                                       ;Реализация данного метода находится в файле TeamFunctions.rkt
                                                                       (loadTournamentData TournamentTable))))
          
-         (AddTournamentCancel-callback (lambda (button control-event) (list(clearFields TournamentDate Team1Score Team2Score)
-                                                                           (closeDialog AddTournamentDialog))))
+         (AddTournamentCancel-callback (lambda (button control-event) (list
+                                                                       (setIsEditTournament #f)
+                                                                       (clearFields TournamentDate Team1Score Team2Score)
+                                                                       (closeDialog AddTournamentDialog))))
          
          (EditTournamentButton-callback (lambda (button control-event) (if (empty? (send TournamentTable get-selections))
                                                                            (list
@@ -439,7 +444,7 @@
         (new
          dialog%
          (parent MainFrame)
-         (label "Добавление матча")
+         (label "")
          (alignment (list 'center 'top))
          (min-width 300)
          (min-height 200)
