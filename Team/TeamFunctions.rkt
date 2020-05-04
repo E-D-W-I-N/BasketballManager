@@ -1,5 +1,5 @@
 #lang racket
-(require "Util.rkt")
+(require "../Util.rkt")
 (provide loadTeamData
          saveTeam
          editTeam
@@ -24,11 +24,11 @@
 (define (incrementTeam)
   (set! TeamCount (add1 TeamCount)))
 
-(define out (open-output-file "TeamDatabase.txt" #:exists 'append))
+(define out (open-output-file "Team/TeamDatabase.txt" #:exists 'append))
 (close-output-port out)
 
 (define (readTeamFile)
-  (set! data (file->list "TeamDatabase.txt"))
+  (set! data (file->list "Team/TeamDatabase.txt"))
   (set! TeamData (list (map (lambda (list)
                               (car list))
                             data)
@@ -56,7 +56,7 @@
                   Name
                   City
                   Coach)
-                 "TeamDatabase.txt" #:exists 'append #:mode 'text))
+                 "Team/TeamDatabase.txt" #:exists 'append #:mode 'text))
 
 (define (getSelectedTeam id)
   (readTeamFile)
@@ -67,16 +67,16 @@
 (define (editTeam id Name City Coach)
   (readTeamFile)
   (getSelectedTeam id)
-  (display-lines-to-file '() "TeamDatabase.txt" #:exists 'truncate)
+  (display-lines-to-file '() "Team/TeamDatabase.txt" #:exists 'truncate)
   (set! isEditTeam #f)
   (map (lambda (list)
-         (write-to-file list "TeamDatabase.txt" #:exists 'append #:mode 'text))
+         (write-to-file list "Team/TeamDatabase.txt" #:exists 'append #:mode 'text))
        (list-set data (- (string->number(car SelectedTeam)) 1) (list (car SelectedTeam) Name City Coach))))
 
 (define (deleteTeam id)
   (readTeamFile)
-  (display-lines-to-file '() "TeamDatabase.txt" #:exists 'truncate)
+  (display-lines-to-file '() "Team/TeamDatabase.txt" #:exists 'truncate)
   (map (lambda (list)
-         (write-to-file list "TeamDatabase.txt" #:exists 'append #:mode 'text))
+         (write-to-file list "Team/TeamDatabase.txt" #:exists 'append #:mode 'text))
        (remove-nth data id)))
         

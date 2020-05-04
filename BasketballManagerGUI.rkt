@@ -3,9 +3,9 @@
   racket/gui/base
   racket/class
   racket/list
-  "TeamFunctions.rkt"
-  "TournamentFunctions.rkt"
-  "RatingFunctions.rkt"
+  "Team/TeamFunctions.rkt"
+  "Tournament/TournamentFunctions.rkt"
+  "Rating/RatingFunctions.rkt"
   "Util.rkt")
 
 (define BasketballManagerGUI #f)

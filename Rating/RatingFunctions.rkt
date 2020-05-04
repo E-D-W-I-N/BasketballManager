@@ -1,7 +1,7 @@
 #lang racket
-(require "TeamFunctions.rkt"
-         "TournamentFunctions.rkt"
-         "Util.rkt")
+(require "../Team/TeamFunctions.rkt"
+         "../Tournament/TournamentFunctions.rkt"
+         "../Util.rkt")
 (provide loadRatingData
          readRatingFile
          saveRating
@@ -11,7 +11,7 @@
 (define RatingData #f)
 (define RatingList #f)
 
-(define out (open-output-file "RatingDatabase.txt" #:exists 'append))
+(define out (open-output-file "Rating/RatingDatabase.txt" #:exists 'append))
 (close-output-port out)
 
 (define RatingCount 0)
@@ -27,7 +27,7 @@
   (set! RatingLoses (add1 RatingLoses)))
 
 (define (readRatingFile)
-  (set! data (file->list "RatingDatabase.txt"))
+  (set! data (file->list "Rating/RatingDatabase.txt"))
   (set! RatingData (list (map (lambda (list)
                                 (car list))
                               data)
@@ -57,7 +57,7 @@
         (list-ref RatingData 3)))
   
 (define (saveRating)
-  (display-lines-to-file '() "RatingDatabase.txt" #:exists 'truncate)
+  (display-lines-to-file '() "Rating/RatingDatabase.txt" #:exists 'truncate)
   (set! RatingCount 0)
   (readTeamFile)
   (readTournamentFile)
@@ -77,4 +77,4 @@
   
   (for ([el SortedList])
     (incrementRating)
-    (write-to-file (AddId RatingCount el) "RatingDatabase.txt" #:exists 'append #:mode 'text)))
+    (write-to-file (AddId RatingCount el) "Rating/RatingDatabase.txt" #:exists 'append #:mode 'text)))

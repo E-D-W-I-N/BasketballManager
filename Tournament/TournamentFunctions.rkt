@@ -1,5 +1,5 @@
 #lang racket
-(require "Util.rkt")
+(require "../Util.rkt")
 (provide loadTournamentData
          saveTournament
          editTournament
@@ -25,11 +25,11 @@
 (define (incrementTournament)
   (set! TournamentCount (add1 TournamentCount)))
 
-(define out (open-output-file "TournamentDatabase.txt" #:exists 'append))
+(define out (open-output-file "Tournament/TournamentDatabase.txt" #:exists 'append))
 (close-output-port out)
 
 (define (readTournamentFile)
-  (set! data (file->list "TournamentDatabase.txt"))
+  (set! data (file->list "Tournament/TournamentDatabase.txt"))
   (set! TournamentData (list
                         (map (lambda (list)
                                (car list))
@@ -104,15 +104,15 @@
                     [(< (string->number Team1Score) (string->number Team2Score)) Team1]
                     [(> (string->number Team1Score) (string->number Team2Score)) Team2]
                     [else "Ничья"]))
-                 "TournamentDatabase.txt" #:exists 'append #:mode 'text))
+                 "Tournament/TournamentDatabase.txt" #:exists 'append #:mode 'text))
 
 (define (editTournament id Team1 Team2 Date Team1Score Team2Score)
   (readTournamentFile)
   (getSelectedTournament id)
-  (display-lines-to-file '() "TournamentDatabase.txt" #:exists 'truncate)
+  (display-lines-to-file '() "Tournament/TournamentDatabase.txt" #:exists 'truncate)
   (set! isEditTournament #f)
   (map (lambda (list)
-         (write-to-file list "TournamentDatabase.txt" #:exists 'append #:mode 'text))
+         (write-to-file list "Tournament/TournamentDatabase.txt" #:exists 'append #:mode 'text))
        (list-set data (- (string->number(car SelectedTournament)) 1) (list
                                                                       (car SelectedTournament)
                                                                       Team1
@@ -131,7 +131,7 @@
 
 (define (deleteTournament id)
   (readTournamentFile)
-  (display-lines-to-file '() "TournamentDatabase.txt" #:exists 'truncate)
+  (display-lines-to-file '() "Tournament/TournamentDatabase.txt" #:exists 'truncate)
   (map (lambda (list)
-         (write-to-file list "TournamentDatabase.txt" #:exists 'append #:mode 'text))
+         (write-to-file list "Tournament/TournamentDatabase.txt" #:exists 'append #:mode 'text))
        (remove-nth data id)))
